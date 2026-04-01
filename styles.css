@@ -1,0 +1,639 @@
+/* Tour price visually matches duration span */
+.tour-price {
+    font-weight: bold;
+    color: #8B4513;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1em;
+}
+.tour-price i {
+    margin-right: 4px;
+    color: #8B4513;
+}
+.footer-links a {
+    text-transform: uppercase;
+}
+.footer-contact {
+    color: #fff !important;
+}
+.footer-contact i {
+    color: #fff !important;
+}
+/* Subtitle for carousel section */
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 30px;
+    text-align: center;
+}
+/* Burger menu styles */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0;
+}
+.burger span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 3px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: var(--primary);
+        flex-direction: column;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        z-index: 1000;
+        padding: 24px 18px 24px 18px;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 15px 0;
+        text-align: right;
+    }
+}
+/* Carousel styles for tours section */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.carousel .tour-card {
+    min-width: 360px;
+    max-width: 360px;
+    margin: 0 10px;
+    flex: 0 0 360px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.carousel {
+    display: flex;
+    align-items: stretch;
+}
+
+@media (max-width: 1200px) {
+    .carousel .tour-card {
+        min-width: 45vw;
+        max-width: 45vw;
+        flex: 0 0 45vw;
+    }
+}
+@media (max-width: 900px) {
+    .carousel .tour-card {
+        min-width: 90vw;
+        max-width: 90vw;
+        flex: 0 0 90vw;
+    }
+}
+@media (max-width: 1200px) {
+    .carousel .tour-card {
+        min-width: 45vw;
+        max-width: 45vw;
+        flex: 0 0 45vw;
+    }
+}
+@media (max-width: 900px) {
+    .carousel .tour-card {
+        min-width: 90vw;
+        max-width: 90vw;
+        flex: 0 0 90vw;
+    }
+}
+
+.carousel .tour-card {
+    min-width: 350px;
+    max-width: 350px;
+    margin: 0 15px;
+    flex: 0 0 auto;
+    transition: transform 0.3s;
+}
+
+.carousel-btn {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+}
+.carousel-btn:hover {
+    background: var(--accent);
+}
+.carousel-btn.prev {
+    margin-right: 10px;
+}
+.carousel-btn.next {
+    margin-left: 10px;
+}
+
+@media (max-width: 1200px) {
+    .carousel .tour-card {
+        min-width: 300px;
+        max-width: 300px;
+    }
+}
+@media (max-width: 900px) {
+    .carousel .tour-card {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+}
+/* Hero subtitle for tours page */
+.hero-subtitle {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+/* styles.css - Secrets of Karakum */
+:root {
+    --primary: #8B4513;
+    --secondary: #F5DEB3;
+    --accent: #CD853F;
+    --light: #FFF8DC;
+    --dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.container.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: block;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/crater_main.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.tours {
+    background-color: white;
+}
+
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.tour-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+}
+
+.tour-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.tour-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tour-card:hover .tour-img img {
+    transform: scale(1.1);
+}
+
+.tour-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 100%;
+}
+
+.tour-content h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.tour-content .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.tour-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+.about {
+    background: linear-gradient(rgba(255,248,220,0.9), rgba(255,248,220,0.9)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-img {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-img img {
+    width: 100%;
+    display: block;
+}
+
+.testimonials {
+    background-color: var(--secondary);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.author-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.author-info p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.contact {
+    background-color: white;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-info h3 {
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    width: 40px;
+    height: 40px;
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--accent);
+    transform: translateY(-3px);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer-logo span {
+    color: var(--secondary);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secondary);
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+    .about-content,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    .about-img {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    section {
+        padding: 60px 0;
+    }
+}
