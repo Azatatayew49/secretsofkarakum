@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-page="about.title">
 
 <head>
 
@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>About Us | Secrets of Karakum</title>
+    <script src="translations.js" defer></script>
     <meta name="description"
         content="About Secrets of Karakum – founded by Yakup Karakochov, a local guide born near ancient Nisa. Discover our story and why we are Turkmenistan's most personal tour operator.">
     <meta name="keywords"
@@ -282,17 +283,21 @@
                     <span></span>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="tours.html">TOURS</a></li>
-                    <li><a href="about.html" class="active">ABOUT US</a></li>
-                    <li><a href="highlights.html">HIGHLIGHTS</a></li>
-                    <li><a href="info.html">INFO</a></li>
-                    <li><a href="more-info.html">FAQ</a></li>
-                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li><a href="tours.html" data-i18n="nav.tours">TOURS</a></li>
+                    <li><a href="about.html" class="active" data-i18n="nav.about">ABOUT US</a></li>
+                    <li><a href="highlights.html" data-i18n="nav.highlights">HIGHLIGHTS</a></li>
+                    <li><a href="info.html" data-i18n="nav.info">INFO</a></li>
+                    <li><a href="more-info.html" data-i18n="nav.faq">FAQ</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">CONTACT</a></li>
                 </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                </div>
             </nav>
             <div class="hero" style="min-height: 180px; justify-content: flex-end; background: none;">
-                <h1 style="color: white;">About Us</h1>
-                <p class="hero-subtitle">Meet the team behind Turkmenistan's most authentic travel experiences.</p>
+                <h1 style="color: white;" data-i18n="about.hero.h1">About Us</h1>
+                <p class="hero-subtitle" data-i18n="about.hero.sub">Meet the team behind Turkmenistan's most authentic travel experiences.</p>
             </div>
         </div>
     </header>
@@ -302,17 +307,17 @@
         <div class="container">
             <div class="about-grid">
                 <div>
-                    <h2>Our Story</h2>
-                    <p>My name is Yakup Karakochov. I am 35 years old and I come from Turkmenistan, from the village of
+                    <h2 data-i18n="about.story.h2">Our Story</h2>
+                    <p data-i18n="about.story.p1">My name is Yakup Karakochov. I am 35 years old and I come from Turkmenistan, from the village of
                         Bagyr, located near ancient Nisa &mdash; the historic residence of the Parthian kings. Since
                         childhood, I have been deeply interested in the history of my homeland and always wanted more
                         people to discover the rich heritage of Turkmenistan.</p>
-                    <p>This dream began to take shape during my student years while I was studying abroad. Being far
+                    <p data-i18n="about.story.p2">This dream began to take shape during my student years while I was studying abroad. Being far
                         away from home made me realize even more strongly the true value of my country, its culture,
                         history, and traditions. That was when I became seriously interested in tourism as a way to
                         introduce people to Turkmenistan and show them the country from a genuine and meaningful
                         perspective.</p>
-                    <p>At the age of 30, I founded Secrets of Karakum. Today, The Secrets of Karakum is an actively
+                    <p data-i18n="about.story.p3">At the age of 30, I founded Secrets of Karakum. Today, The Secrets of Karakum is an actively
                         operating
                         company that has already found its place in the tourism market. For us, it is not about
                         quantity, but about quality.</p>
@@ -325,31 +330,31 @@
     <!-- Our Values -->
     <section class="values-section">
         <div class="container">
-            <h2>What We Stand For</h2>
-            <p class="subtitle">The principles that guide every journey we create</p>
+            <h2 data-i18n="about.values.h2">What We Stand For</h2>
+            <p class="subtitle" data-i18n="about.values.sub">The principles that guide every journey we create</p>
             <div class="values-grid">
                 <div class="value-card">
                     <i class="fas fa-compass"></i>
-                    <h3>Authentic Experiences</h3>
-                    <p>We go beyond tourist hotspots to offer genuine cultural encounters and hidden gems known only to
+                    <h3 data-i18n="about.v1.h3">Authentic Experiences</h3>
+                    <p data-i18n="about.v1.p">We go beyond tourist hotspots to offer genuine cultural encounters and hidden gems known only to
                         locals.</p>
                 </div>
                 <div class="value-card">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Safety First</h3>
-                    <p>Every tour is planned with your safety in mind. Our guides are trained and our vehicles are fully
+                    <h3 data-i18n="about.v2.h3">Safety First</h3>
+                    <p data-i18n="about.v2.p">Every tour is planned with your safety in mind. Our guides are trained and our vehicles are fully
                         maintained.</p>
                 </div>
                 <div class="value-card">
                     <i class="fas fa-leaf"></i>
-                    <h3>Responsible Tourism</h3>
-                    <p>We respect local communities and the environment, ensuring travel benefits the people and places
+                    <h3 data-i18n="about.v3.h3">Responsible Tourism</h3>
+                    <p data-i18n="about.v3.p">We respect local communities and the environment, ensuring travel benefits the people and places
                         we visit.</p>
                 </div>
                 <div class="value-card">
                     <i class="fas fa-hands-helping"></i>
-                    <h3>Personalized Service</h3>
-                    <p>No two travelers are alike. We tailor every itinerary to your interests, pace, and budget.</p>
+                    <h3 data-i18n="about.v4.h3">Personalized Service</h3>
+                    <p data-i18n="about.v4.p">No two travelers are alike. We tailor every itinerary to your interests, pace, and budget.</p>
                 </div>
             </div>
         </div>
@@ -360,14 +365,14 @@
         <div class="container">
             <div class="about-grid reverse">
                 <div>
-                    <h2>Why Choose Us</h2>
-                    <p>We do not focus on mass tourism &mdash; our main goal is to ensure that every guest traveling
+                    <h2 data-i18n="about.why.h2">Why Choose Us</h2>
+                    <p data-i18n="about.why.p1">We do not focus on mass tourism &mdash; our main goal is to ensure that every guest traveling
                         with us can truly experience the atmosphere of Turkmenistan, immerse themselves in its culture,
                         and see the country from the inside.</p>
-                    <p>Our company works with licensed and qualified professionals who are passionate about their work.
+                    <p data-i18n="about.why.p2">Our company works with licensed and qualified professionals who are passionate about their work.
                         I personally love traveling as well, and I actively guide tours myself, sharing with guests the
                         history, traditions, and spirit of our country.</p>
-                    <p>We truly believe that tourism brings people, cultures, and nations closer together. Together with
+                    <p data-i18n="about.why.p3">We truly believe that tourism brings people, cultures, and nations closer together. Together with
                         our team and the local people whom guests meet along the way, we are always happy to share our
                         warmth, openness, and positive energy.</p>
                 </div>
@@ -379,15 +384,15 @@
     <!-- Team Section -->
     <section class="team-section">
         <div class="container">
-            <h2>Meet the Founder</h2>
-            <p class="subtitle">A passionate local dedicated to sharing the wonders of Turkmenistan</p>
+            <h2 data-i18n="about.team.h2">Meet the Founder</h2>
+            <p class="subtitle" data-i18n="about.team.sub">A passionate local dedicated to sharing the wonders of Turkmenistan</p>
             <div class="team-grid" style="max-width:380px; margin:0 auto;">
                 <div class="team-card">
                     <img src="img/ashgabat2.jpg" alt="Yakup Karakochov">
                     <div class="team-card-body">
-                        <h3>Yakup Karakochov</h3>
-                        <span>Founder &amp; Lead Guide</span>
-                        <p>Born in the village of Bagyr near ancient Nisa, Yakup founded Secrets of Karakum at age 30,
+                        <h3 data-i18n="about.founder.name">Yakup Karakochov</h3>
+                        <span data-i18n="about.founder.role">Founder &amp; Lead Guide</span>
+                        <p data-i18n="about.founder.bio">Born in the village of Bagyr near ancient Nisa, Yakup founded Secrets of Karakum at age 30,
                             driven by a lifelong passion to share Turkmenistan&rsquo;s culture and history with the
                             world. He personally leads tours and welcomes every guest with warmth and sincerity.</p>
                     </div>
@@ -399,9 +404,9 @@
     <!-- Call to Action -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Explore Turkmenistan?</h2>
-            <p>Browse our exclusive tours or reach out to plan a custom journey.</p>
-            <a href="tours.html" class="btn">VIEW OUR TOURS</a>
+            <h2 data-i18n="about.cta.h2">Ready to Explore Turkmenistan?</h2>
+            <p data-i18n="about.cta.p">Browse our exclusive tours or reach out to plan a custom journey.</p>
+            <a href="tours.html" class="btn" data-i18n="btn.view_tours">VIEW OUR TOURS</a>
         </div>
     </section>
 
@@ -435,11 +440,11 @@
             </div>
 
             <ul class="footer-links">
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="tours.html" data-i18n="footer.tours">Tours</a></li>
+                <li><a href="about.html" data-i18n="footer.about">About</a></li>
+                <li><a href="index.html#contact" data-i18n="footer.contact">Contact</a></li>
             </ul>
-            <p class="copyright">© 2023 Secrets of Karakum Tourism Agency. All rights reserved.</p>
+            <p class="copyright" data-i18n="footer.copyright">© 2023 Secrets of Karakum Tourism Agency. All rights reserved.</p>
         </div>
     </footer>
 

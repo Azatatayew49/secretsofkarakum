@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page="t4.title">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4-Day Discovery of Turkmenistan: From Marble City to Sacred Mountains | Secrets of Karakum</title>
+    <script src="translations.js" defer></script>
     <meta name="description" content="4-Day Discovery of Turkmenistan from 710 USD – from Ashgabat's marble boulevards to the sacred Kopet Dag mountains. A perfect introduction to the country.">
     <meta name="keywords" content="4 day tour Turkmenistan, Ashgabat sightseeing, Nohur village, Kopet Dag mountains, Turkmenistan itinerary">
     <meta name="author" content="Secrets of Karakum">
@@ -50,17 +51,21 @@
                     <span></span>
                 </button>
                                 <ul class="nav-links">
-                    <li><a href="tours.html" class="active">TOURS</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="highlights.html">HIGHLIGHTS</a></li>
-                    <li><a href="info.html">INFO</a></li>
-                    <li><a href="more-info.html">FAQ</a></li>
-                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li><a href="tours.html" class="active" data-i18n="nav.tours">TOURS</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">ABOUT US</a></li>
+                    <li><a href="highlights.html" data-i18n="nav.highlights">HIGHLIGHTS</a></li>
+                    <li><a href="info.html" data-i18n="nav.info">INFO</a></li>
+                    <li><a href="more-info.html" data-i18n="nav.faq">FAQ</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">CONTACT</a></li>
                 </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                </div>
             </nav>
             <div class="hero" style="min-height: 180px; justify-content: flex-end; background: none;">
-                <h1 style="color: white;">4-Day Discovery of Turkmenistan</h1>
-                <p class="hero-subtitle">From Marble City to Sacred Mountains &mdash; From 710 USD per person</p>
+                <h1 style="color: white;" data-i18n="t4.hero.h1">4-Day Discovery of Turkmenistan</h1>
+                <p class="hero-subtitle" data-i18n="t4.hero.sub">From Marble City to Sacred Mountains &mdash; From 710 USD per person</p>
             </div>
         </div>
     </header>
@@ -91,8 +96,8 @@
                 <p>After breakfast, depart for the scenic mountain region southwest of Ashgabat. Drive into the Kopetdag foothills to visit Nohur, a remote mountain village known for its distinctive customs, traditional way of life, and beautiful natural surroundings. Continue to Kow Ata Underground Lake, a remarkable natural site hidden inside a cave, known for its warm mineral-rich water. Those who wish may enjoy a swim in its naturally heated waters. After lunch, return to Ashgabat and transfer to Ashgabat International Airport for departure. End of the tour.</p>
                 <p><em>Distance of the day: approx. 180&ndash;220 km</em></p>
             </div>
-            <h2>Tour Price Includes</h2>
-            <ul class="inclusions">
+            <h2 data-i18n="t4.incl.h2">Tour Price Includes</h2>
+            <ul class="inclusions" data-i18n-list="t4.incl">
                 <li>Meet and greet at Ashgabat International Airport with local English-speaking guide</li>
                 <li>All transfers and transportation throughout the program</li>
                 <li>Accommodation in hotels in Ashgabat</li>
@@ -115,8 +120,8 @@
                 <li><em>Note: The price depends on the number of participants. The more people join, the lower the price per person.</em></li>
                 <li><strong>Customizable:</strong> Can start from Ashgabat, Farap, or Shavat land border</li>
             </ul>
-            <h2>Not Included</h2>
-            <ul class="not-included">
+            <h2 data-i18n="t4.notincl.h2">Not Included</h2>
+            <ul class="not-included" data-i18n-list="t4.notincl">
                 <li>International flights</li>
                 <li>Lunches and dinners, except where specified in the program</li>
                 <li>Turkmenistan tourist visa fee and migration charges</li>
@@ -133,14 +138,14 @@
 <!-- Contact Form Section -->
 <section class="contact" style="background:#fff8dc; padding:40px 0; border-top:2px solid #8B4513;">
     <div class="container">
-        <h2 style="text-align:center; color:#8B4513; margin-bottom:24px;">Request This Tour</h2>
+        <h2 style="text-align:center; color:#8B4513; margin-bottom:24px;" data-i18n="tour.request.h2">Request This Tour</h2>
         <div class="contact-form" style="max-width:500px; margin:0 auto;">
             <form action="send_mail.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="name" placeholder="Your Name" required data-i18n="form.name">
+                <input type="email" name="email" placeholder="Your Email" required data-i18n="form.email">
                 <input type="text" name="subject" value="4 days tour" readonly>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Request Tour</button>
+                <textarea name="message" placeholder="Your Message" required data-i18n="form.message"></textarea>
+                <button type="submit" class="btn" data-i18n="form.request">Request Tour</button>
             </form>
         </div>
     </div>
@@ -168,11 +173,11 @@
             </div>
 
             <ul class="footer-links">
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="tours.html" data-i18n="footer.tours">Tours</a></li>
+                <li><a href="index.html#about" data-i18n="footer.about">About</a></li>
+                <li><a href="index.html#contact" data-i18n="footer.contact">Contact</a></li>
             </ul>
-            <p class="copyright">© 2023 Secrets of Karakum Tourism Agency. All rights reserved.</p>
+            <p class="copyright" data-i18n="footer.copyright">© 2023 Secrets of Karakum Tourism Agency. All rights reserved.</p>
         </div>
     </footer>
     <script src="scripts.js"></script>
