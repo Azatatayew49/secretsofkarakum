@@ -1,9 +1,9 @@
 <?php
 
-$to = "info@secretsofkarakum.com";
-$cc = "bajhanbajliev@gmail.com";
+$to = "secretsofkarakumyakup@gmail.com";
+$cc = "secretsofkarakumyakup@gmail.com";
 
-$from = "info@secretsofkarakum.com";
+$from = "secretsofkarakumyakup@gmail.com";
 
 
 

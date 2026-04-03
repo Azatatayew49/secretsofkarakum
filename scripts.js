@@ -1,9 +1,9 @@
 // scripts.js - Secrets of Karakum
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Example: Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             if (href.length > 1 && document.querySelector(href)) {
                 e.preventDefault();
@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
             carousel.scrollTo({ left: scrollAmount, behavior: 'smooth' });
         }
 
-        prevBtn.addEventListener('click', function() {
+        prevBtn.addEventListener('click', function () {
             scrollCarousel(-1);
         });
-        nextBtn.addEventListener('click', function() {
+        nextBtn.addEventListener('click', function () {
             scrollCarousel(1);
         });
 
@@ -60,15 +60,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // Burger menu functionality
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
+    const navOverlay = document.querySelector('.nav-overlay');
+
+    function openMenu() {
+        navLinks.classList.add('open');
+        burger.classList.add('open');
+        if (navOverlay) navOverlay.classList.add('open');
+        burger.setAttribute('aria-label', 'Close navigation menu');
+    }
+
+    function closeMenu() {
+        navLinks.classList.remove('open');
+        burger.classList.remove('open');
+        if (navOverlay) navOverlay.classList.remove('open');
+        burger.setAttribute('aria-label', 'Open navigation menu');
+    }
+
     if (burger && navLinks) {
-        burger.addEventListener('click', function() {
-            navLinks.classList.toggle('open');
+        burger.addEventListener('click', function () {
+            navLinks.classList.contains('open') ? closeMenu() : openMenu();
         });
-        // Optional: close menu when a link is clicked (for better UX)
+        if (navOverlay) {
+            navOverlay.addEventListener('click', closeMenu);
+        }
         navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('open');
-            });
+            link.addEventListener('click', closeMenu);
         });
     }
 });
